@@ -89,6 +89,7 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--anmation-duratioin) ease-in-out;
+  z-index: 1;
 }
 #navbar.navbar--dark {
   background-color: var(--color-blue);
