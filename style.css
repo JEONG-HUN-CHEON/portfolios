@@ -108,6 +108,15 @@ p {
   background-color: var(--color-dark-grey);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /*Home*/
 #Home {
   background: url(imgs/home-background.png) center/cover no-repeat;
@@ -362,4 +371,21 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-pink);
+}
+
+/*For below 768px screen width*/
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
 }
