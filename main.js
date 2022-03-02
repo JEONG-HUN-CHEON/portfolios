@@ -107,3 +107,15 @@ function scrollIntoView(selector) {
 //2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
 //3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다.
 
+//1
+const sectionIds = [
+    '#Home', 
+    '#about', 
+    '#skills', 
+    '#work', 
+    '#contact',
+];
+const sections = sectionIds.map(id => document.querySelector(id));
+const navItems = sectionIds.map(id => document.querySelector(`[data-link="${id}"]`));
+
+
