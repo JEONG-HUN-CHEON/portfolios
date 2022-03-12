@@ -332,6 +332,8 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
+  border: 3px solid #ffd2d0;
+  border-radius: 4px;
 }
 .project.invisible {
   display: none;
