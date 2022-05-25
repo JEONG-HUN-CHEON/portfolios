@@ -10,10 +10,14 @@
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
-  --color-blue: #03a3d2;
+  --color-pacific-pink: #DB7093;
   --color-light-blue: #a2e3f7;
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
+  --color-caming-coral: #E9967A;
+  --color-bright-pink: #f16593;
+  --color-hot-pink: #ff3c8d;
+  --color-peach: #f98383;
   /*Font size*/
   --font-large: 48px;
   --font-medium: 28px;
@@ -92,7 +96,7 @@ p {
   z-index: 1;
 }
 #navbar.navbar--dark {
-  background-color: var(--color-blue);
+  background-color: var(--color-peach);
   padding: 8px;
 }
 
@@ -100,8 +104,14 @@ p {
   display: flex;
 }
 .navbar__logo {
+  flex-basis: 46%;
+  display: flex;
+  align-items: center;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+}
+.fav{
+  margin-right: 3%;
 }
 .navbar__menu__item {
   padding: 8px 12px;
@@ -114,7 +124,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-pacific-pink);
   border-color: var(--color-white);
 }
 
@@ -129,7 +139,7 @@ p {
 
 /*Home*/
 #Home {
-  background: url(imgs/home-background.png) center/cover no-repeat;
+  background: url(imgs/home-background.jpg) center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -155,13 +165,13 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-pacific-pink);
 }
 
 /*Section Common*/
 .section {
   padding: 16px;
-  padding-top: 60px;
+  padding-top: px;
   text-align: center;
   margin: auto;
 }
@@ -183,8 +193,8 @@ p {
   line-height: 170px;
   font-size: 70px;
   margin: auto;
-  color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  color: var(--color-pacific-pink);
+  border: 1px solid var(--color-pacific-pink);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -226,7 +236,7 @@ p {
 
 /*Sills*/
 #skills {
-  background-color: var(--color-light-blue);
+  background-color: var(--color-pacific-pink);
 }
 #skills .section__container h1,
 h2,
@@ -287,11 +297,11 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-blue);
+  background-color: var(--color-pacific-pink);
   color: var(--color-white);
 }
 .category__count {
-  background-color: var(--color-light-blue);
+  background-color: var(--color-pacific-pink);
   border-radius: 50%;
   color: var(--color-white);
   width: 24px;
@@ -332,7 +342,7 @@ p {
   height: 250px;
   margin: 2px;
   background-color: var(--color-light-white);
-  border: 3px solid var(--color-light-blue);
+  border: 3px solid var(--color-peach);
   border-radius: 4px;
 }
 .project.invisible {
@@ -380,7 +390,7 @@ p {
 
 /*Contact*/
 #contact {
-  background-color: var(--color-light-blue);
+  background-color: var(--color-pacific-pink);
 }
 
 .contact__title,
@@ -414,7 +424,7 @@ p {
   font-size: 50px;
   border-radius: 50%;
   color: var(--color-white);
-  background-color: var(--color-blue);
+  background-color: var(--color-peach);
   opacity: 0;
   pointer-events: none;
   transition: all var(--anmation-duratioin) ease-in;
@@ -440,7 +450,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-blue);
+    background-color: var(--color-pacific-pink);
   }
   #navbar.navbar--dark {
     padding: 16px;

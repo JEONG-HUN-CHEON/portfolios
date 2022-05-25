@@ -23,7 +23,7 @@
             <i class="fav">
                 <img src="./imgs/favicon.png">
             </i>
-            <a href="#" style="position: absolute;">JeongHun's Portfolio</a>
+            <a href="#">JeongHun's Portfolio</a>
         </div>
             <ul class="navbar__menu">
                 <li class="navbar__menu__item active" data-link="#Home">Home</li>
@@ -54,7 +54,10 @@
     <!--About-->
     <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p style="color: black;">비전공자인 저는 6개월간 Web-publishing과정을 통해 HTML,CSS와 Javascript관련하여 공부하였습니다. 현재는 React,vue관련해 공부하여 프론트엔드개발자가 되는것이 목표이고, 더 나아가 Java, Python같은 백엔드 관련한 program language를 익혀 풀스택개발자가 되는것이 저의 최종 목표입니다.</p>
+        <p style="color: black; text-align: center; ">비전공자인 저는 6개월간 Web-publishing과정을 통해 <strong>HTML,CSS와 Javascript</strong>관련하여 공부하였습니다. <br>
+                                                        현재는 <strong>Java, DBMS, Spring boot</strong>등 백엔드 관련하여 공부중에 있습니다.  <br>
+                                                        풀스택개발자가 되는것이 저의 최종 목표입니다.
+        </p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
@@ -63,16 +66,29 @@
                 <h2 class="major__tilte">Front-end</h2>
                 <div class="major__description">HTML, CSS, JAVASCRIPT</div>
             </div>
+            <div class="major" style="margin-left: 5%;">
+                <div class="major__icon">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <h2 class="major__tilte">Back-end</h2>
+                <div class="major__description">JAVA, MariaDB, LINUX</div>
+            </div>
         </div>
         <div class="about__job">
             <div class="job">
-                <img src="./imgs/logo.jpg" alt="중앙직업전문학교" class="job__logo">
-                <div class="job__description">
+                <img src="./imgs/logo.jpg" alt="중앙직업전문학교" class="job__logo" style="margin-left: 48px;">
+                <div class="job__description" style="margin-left: 68px;">
                     <p class="job__name">중앙직업전문학교</p>
                     <p class="job__period">2021.10 - 2022.04</p>
                 </div>
             </div>
-            <div class="job"></div>
+            <div class="job">
+                <img src="./imgs/korea-it-logo.png" alt="코리아it 아카데미" class="job__logo">
+                <div class="job__description">
+                    <p class="job__name">코리아it아카데미</p>
+                    <p class="job__period">2022.04 - 2022.10</p>
+                </div>
+            </div>
         </div>
     </section>
     <!--Skills-->
@@ -113,11 +129,38 @@
                 </div>
                 <div class="skill">
                     <div class="skill__description">
-                        <span>Adobe Photoshop</span>
+                        <span>JAVA</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>LINUX</span>
                         <span>70%</span>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__value" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>MariaDB</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill__description">
+                        <span>Spring boot</span>
+                        <span>30%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__value" style="width: 30%"></div>
                     </div>
                 </div>
             </div>
@@ -127,15 +170,15 @@
                     <ul class="tools__list">
                         <li><span>Visual Studio Code</span></li>
                         <li><span>Bracket</span></li>
-                        <li><span></span></li>
-                        <li><span></span></li>
-                        <li><span></span></li>
+                        <li><span>Intelli J</span></li>
+                        <li><span>eclipse</span></li>
+                        <li><span>xshell</span></li>
                     </ul>
                 </div>
                 <div class="etc">
                     <h3 class="skillset__title">Etc</h3>
                     <ul class="etc__list">
-                        <li><span>Git</span></li>
+                        <li><span>Github</span></li>
                         <li><span></span></li>
                         <li><span></span></li>
                     </ul>
@@ -148,7 +191,7 @@
     <section id="work" class="section">
        <div class="section__container">
         <h1>My work</h1>
-        <h3>Projects</h3>
+        <strong style="font-weight: 800;">Projects</strong>
         <div class="work__categories">
             <button class="category__btn selected" data-filter="*">All<span class="category__count">5</span></button>
             <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">5</span></button>
